@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  /* grid-gap: 10px; */
+  /* grid-template-columns: [label] 0.2fr [input] 1fr; */
+}
+.wrapper input {
+  /* grid-column: input; */
+  align-self: stretch;
+  border: solid 0.1em #ccc;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+  padding: 0.5em;
+}
+.wrapper label {
+  /* grid-column: label; */
+  align-self: start;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper button {
+  align-self: end;
+}

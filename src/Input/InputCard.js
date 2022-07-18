@@ -13,7 +13,11 @@ const InputCard = (props) => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onAddPerson({ id: Math.random(), name: name, age: age });
+    if (age > 0) {
+      props.onAddPerson({ id: Math.random(), name: name, age: age });
+    } else {
+      props.changeValidity();
+    }
     setAge("");
     setName("");
   };

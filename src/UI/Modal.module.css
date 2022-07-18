@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.titleBar {
+  background-color: rgb(125 157 156);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 1em;
+  font-size: 1.2em;
+}
+.card {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.buttons {
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+.valid {
+  display: none;
+}

@@ -24,10 +24,10 @@ const App = () => {
     });
   };
   return (
-    <div>
+    <>
       <Modal
         changeValidity={changeValitidy}
-        error={`Enter a username and a valid age >= 0`}
+        error={`Enter a username and a valid age > 0`}
         valid={valid}
       ></Modal>
       <div className={styles.container}>
@@ -38,7 +38,7 @@ const App = () => {
         />
         <OutputCard onRemovePerson={removePeopleHandler} users={people} />
       </div>
-    </div>
+    </>
   );
 };
 

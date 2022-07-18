@@ -13,6 +13,10 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
   padding: 0.5em;
 }
+.wrapper input:focus {
+  outline: none;
+  border-color: #576f72;
+}
 .wrapper label {
   /* grid-column: label; */
   align-self: start;

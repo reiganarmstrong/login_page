@@ -6,24 +6,21 @@
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .titleBar {
   background-color: rgb(125 157 156);
-  position: relative;
-  display: flex;
-  justify-content: center;
   color: #ffffff;
-  font-weight: bold;
-  border-radius: 1em;
-  font-size: 1.2em;
+  padding: 5%;
+  border-radius: 1em 1em 0em 0em;
 }
 .card {
   background-color: #e4e4e4;
-  display: flex;
   flex-direction: column;
   gap: 1em;
   justify-content: center;
-  align-items: space-around;
+  padding: 0%;
 }
 
 .buttons {
@@ -31,7 +28,20 @@
   display: flex;
   justify-content: flex-end;
   gap: 0.5em;
+  padding-left: 2%;
+  padding-right: 4%;
+  padding-bottom: 5%;
+  padding-top: 0%;
+  border-radius: 0em 0em 1em 1em;
 }
 .valid {
   display: none;
+}
+
+.container p {
+  padding: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  color: rgb(0, 0, 0);
+  font-weight: 350;
 }

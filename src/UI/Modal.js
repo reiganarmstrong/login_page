@@ -1,7 +1,9 @@
 import Button from "./Button";
 import Card from "./Card";
 import styles from "./Modal.module.css";
-const Modal = (props) => {
+import ReactDOM from "react-dom";
+
+const ModalBackend = (props) => {
   const localFlip = (e) => {
     console.log(e);
     props.changeValidity();
@@ -9,13 +11,23 @@ const Modal = (props) => {
   return (
     <div className={(props.valid && styles.valid) || styles.container}>
       <Card className={styles.card}>
-        <div className={styles.titleBar}>Invalid Input</div>
-        <div>{props.error}</div>
+        <header className={styles.titleBar}>Invalid Input</header>
+        <p>{props.error}</p>
         <div className={styles.buttons}>
           <Button value="Okay" onClick={localFlip} />
         </div>
       </Card>
     </div>
+  );
+};
+const Modal = (props) => {
+  return (
+    <>
+      {ReactDOM.createPortal(
+        <ModalBackend {...props} />,
+        document.getElementById("modal-root")
+      )}
+    </>
   );
 };
 export default Modal;

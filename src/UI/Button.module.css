@@ -5,4 +5,5 @@
   border-radius: 0.5em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
   font-weight: bold;
+  cursor: pointer;
 }
